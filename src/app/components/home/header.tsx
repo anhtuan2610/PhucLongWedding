@@ -1,20 +1,23 @@
-import { Phone, Facebook, Instagram } from "lucide-react";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa"; // Tiktok cũng có trong react-icons/fa
+import { SiZalo } from "react-icons/si"; // Zalo có trong Simple Icons
 import Image from "next/image";
+import { Phone } from "lucide-react";
 
 const socialIcons = [
   {
     name: "Facebook",
-    icon: Facebook,
-    link: "https://www.facebook.com/hanh.hang.75?locale=vi_VN",
+    icon: FaFacebookF,
+    link: "https://www.facebook.com/phuclongwedding?locale=vi_VN",
   },
   {
-    name: "Instagram",
-    icon: Instagram,
-    link: "https://www.instagram.com/_hoon.hank/?fbclid=IwY2xjawM1xR1leHRuA2FlbQIxMABicmlkETFyMnQ4a3Y3R1FvbU9VUVY4AR66ovOgZWDihI0Fsav6qaXdNUjhAWXJkaLihO0cdqofppr7mxk5981HRt48UA_aem_-xGcIZ6YGQ7uc6afQALQjQ#",
+    name: "Tiktok",
+    icon: FaTiktok,
+    link: "https://www.tiktok.com/@phuclongwedding",
   },
   {
     name: "Zalo",
-    icon: "/images/home/zalo-icon.png", // icon dạng ảnh
+    icon: SiZalo, // icon dạng ảnh
     link: "https://zalo.me/0383442266",
   },
 ];

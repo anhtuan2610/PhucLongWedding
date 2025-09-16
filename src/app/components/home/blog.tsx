@@ -27,7 +27,7 @@ const blogList = [
 
 const Blogs = () => {
   return (
-    <div className="px-2 flex justify-center mb-8 lg:mt-16">
+    <div className="px-2 flex justify-center mb-8 ">
       <div className="max-w-[1180px] mx-auto">
         <section className="space-y-6 my-8">
           <h2 className="font-lora text-[38px] text-[#3c634f] font-normal text-center lg:text-[50px] lg:font-medium">
