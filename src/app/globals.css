@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+.font-lora {
+  font-family: var(--font-lora);
+}
