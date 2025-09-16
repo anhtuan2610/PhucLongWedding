@@ -12,7 +12,7 @@ const feedbackList = [
     id: 1,
     image: "/images/home/feedback1.png",
     name: "Chú rể Antony Nguyễn",
-    desc: "Cũng nhờ chị Hạnh anh Đức tư vấn, 2 anh chị nhiệt tình hỗ trợ chúng em mới có thành quả đẹp như thế này. Em quá mãn nguyện rồi.",
+    desc: "Cũng nhờ Phúc Long wedding tư vấn, 2 anh chị nhiệt tình hỗ trợ chúng em mới có thành quả đẹp như thế này. Em quá mãn nguyện rồi.",
   },
   {
     id: 2,

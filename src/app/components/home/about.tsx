@@ -36,8 +36,8 @@ const About = () => {
           </h2>
           <div className="text-base font-montserrat font-medium">
             <p className="uppercase">
-              CHÀO MỪNG BẠN ĐẾN VỚI CÔNG TY TNHH TỔ CHỨC SỰ KIỆN ĐÁM CƯỚI Đức
-              Hạnh
+              CHÀO MỪNG BẠN ĐẾN VỚI CÔNG TY TNHH TỔ CHỨC SỰ KIỆN ĐÁM CƯỚI PHÚC
+              LONG
             </p>
             <p>
               Chúng tôi là nhà tổ chức sự kiện - cưới hỏi chuyên nghiệp. Với
