@@ -20,21 +20,21 @@ const Footer = () => {
           <p className="text-gray-300">
             Email:{" "}
             <a
-              href="mailto:info@duchanh.com"
+              href="mailto:phuclongwedding2024@gmail.com"
               className="text-[#D1B483] hover:underline"
             >
-              info@duchanh.com
+              phuclongwedding2024@gmail.com
             </a>
           </p>
           <p className="text-gray-300">
             Website:{" "}
             <a
-              href="https://duchanh.com"
+              href="https://phuclongwedding.com/"
               target="_blank"
               rel="noreferrer"
               className="text-[#D1B483] hover:underline"
             >
-              duchanh.com
+              https://phuclongwedding.com/
             </a>
           </p>
         </div>
@@ -43,7 +43,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Kết nối</h3>
           <a
-            href="https://facebook.com/duchanh"
+            href="https://www.facebook.com/phuclongwedding?locale=vi_VN"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 text-[#D1B483] hover:underline"

@@ -5,7 +5,7 @@ const socialIcons = [
   {
     name: "Facebook",
     icon: Facebook,
-    link: "https://www.facebook.com/hanh.hang.75?locale=vi_VN",
+    link: "https://www.facebook.com/phuclongwedding?locale=vi_VN",
   },
   {
     name: "Instagram",
