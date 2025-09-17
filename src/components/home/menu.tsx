@@ -14,7 +14,7 @@ const Menu = () => {
   return (
     <header className="max-w-[1180px] mx-auto flex items-center justify-between p-4 relative z-50">
       {/* Logo */}
-      <div className="relative w-22 h-22">
+      <div className="relative w-14 h-14 xl:w-22 xl:h-22">
         <Image
           src="/images/logo.png"
           alt="Logo"
@@ -87,7 +87,7 @@ const Menu = () => {
         onClick={() => setOpen(true)}
         className="xl:hidden text-gray-800 hover:text-gray-600 transition-colors"
       >
-        <MenuIcon size={40} />
+        <MenuIcon size={30} />
       </button>
 
       {/* ----- Drawer cho mobile ----- */}

@@ -1,16 +1,16 @@
 "use client";
 
-import Menu from "./components/home/menu";
+import Menu from "../components/home/menu";
 import Image from "next/image";
-import Services from "./components/home/services";
-import Videos from "./components/home/videos";
-import About from "./components/home/about";
-import Partners from "./components/home/partners";
-import Blogs from "./components/home/blog";
-import Feedbacks from "./components/home/feedbacks";
-import ContactForm from "./components/home/contact-form";
-import Footer from "./components/home/footer";
-import Header from "./components/home/header";
+import Services from "../components/home/services";
+import Videos from "../components/home/videos";
+import About from "../components/home/about";
+import Partners from "../components/home/partners";
+import Blogs from "../components/home/blog";
+import Feedbacks from "../components/home/feedbacks";
+import ContactForm from "../components/home/contact-form";
+import Footer from "../components/home/footer";
+import Header from "../components/home/header";
 import { useState } from "react";
 
 export default function Home() {
