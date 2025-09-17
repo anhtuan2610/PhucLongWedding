@@ -30,13 +30,13 @@ export default function Home() {
             muted
             loop
             playsInline
-            poster="/images/banner-placeholder.png"
+            poster="/images/home/banner-placeholder.png"
             onError={() => setVideoError(true)}
             className="absolute top-0 left-0 w-full h-full object-cover"
           />
         ) : (
           <Image
-            src="/images/banner-placeholder.png"
+            src="/images/home/banner-placeholder.png"
             alt="banner fallback"
             fill
             className="object-cover"
