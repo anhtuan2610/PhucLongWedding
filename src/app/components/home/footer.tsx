@@ -5,7 +5,9 @@ const Footer = () => {
         {/* Địa chỉ */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Địa chỉ</h3>
-          <p className="text-gray-300">Ngõ 10, Cao Xanh, Hạ Long, Quảng Ninh</p>
+          <p className="text-gray-300">
+            SN 15-17 Ông Ích Kiêm , Phường Cao Xanh
+          </p>
         </div>
 
         {/* Hotline */}

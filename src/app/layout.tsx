@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { Metadata } from "next";
+import Script from "next/script";
 
 const montserrat = localFont({
   src: "../../public/fonts/Montserrat-VariableFont_wght.ttf",
@@ -13,9 +14,17 @@ const lora = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://phuclongwedding.com"),
   title: "Phúc Long Wedding",
   description:
     "Phúc Long Wedding cung cấp dịch vụ cưới trọn gói, trang trí tiệc cưới đẹp mắt và độc đáo, biến ngày trọng đại của bạn thành kỷ niệm đáng nhớ.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://phuclongwedding.com",
+  },
   keywords: [
     "wedding",
     "phúc long wedding",
@@ -29,7 +38,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
-  themeColor: "#f9c0c0", // màu chủ đạo trang web
   openGraph: {
     title: "Phúc Long Wedding - Dịch vụ cưới chuyên nghiệp",
     description:
@@ -38,7 +46,7 @@ export const metadata: Metadata = {
     siteName: "Phúc Long Wedding",
     images: [
       {
-        url: "https://phuclongwedding.com/og-image.jpg",
+        url: "/images/home/about.png",
         width: 1200,
         height: 630,
         alt: "Phúc Long Wedding",
@@ -52,7 +60,7 @@ export const metadata: Metadata = {
     title: "Phúc Long Wedding - Dịch vụ cưới chuyên nghiệp",
     description:
       "Phúc Long Wedding biến ngày cưới của bạn trở thành kỷ niệm đáng nhớ với dịch vụ trang trí và tổ chức tiệc cưới trọn gói.",
-    images: ["https://phuclongwedding.com/og-image.jpg"],
+    images: ["/images/home/about.png"],
   },
 };
 
@@ -63,6 +71,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className={`${montserrat.variable} ${lora.variable}`}>
+      <head>
+        {/* ✅ Structured Data: LocalBusiness */}
+        <Script
+          id="ld-json-localbusiness"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Phúc Long Wedding",
+            image: "https://phuclongwedding.com/images/home/about.png",
+            "@id": "https://phuclongwedding.com",
+            url: "https://phuclongwedding.com",
+            telephone: "0383 44 22 66",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress:
+                "SN 15-17 Ông Ích Kiêm , Phường Cao Xanh, thành phố Hạ Long, tỉnh Quảng Ninh",
+              addressLocality: "Hạ Long",
+              addressRegion: "Quảng Ninh",
+              addressCountry: "VN",
+            },
+            sameAs: ["https://www.facebook.com/phuclongwedding?locale=vi_VN"],
+          })}
+        </Script>
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   );
