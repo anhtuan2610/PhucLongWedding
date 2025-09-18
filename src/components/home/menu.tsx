@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { MenuIcon, X, ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { services } from "./services";
 
@@ -14,28 +15,30 @@ const Menu = () => {
   return (
     <header className="max-w-[1180px] mx-auto flex items-center justify-between p-4 relative z-50">
       {/* Logo */}
-      <div className="relative w-14 h-14 xl:w-22 xl:h-22">
-        <Image
-          src="/images/logo.png"
-          alt="Logo"
-          fill
-          className="object-contain"
-        />
-      </div>
+      <Link href="/">
+        <div className="relative w-14 h-14 xl:w-22 xl:h-22">
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </Link>
 
       {/* ----- Menu chữ cho màn lớn (desktop) ----- */}
       <nav className="hidden xl:flex items-center gap-8 text-lg font-semibold text-[#3D6350]">
-        <a href="#trang-chu" className="hover:text-[#D1B483] transition-colors">
+        <Link href="/" className="hover:text-[#D1B483] transition-colors">
           Trang chủ
-        </a>
-        <a
-          href="#gioi-thieu"
+        </Link>
+        <Link
+          href="/introduce"
           className="hover:text-[#D1B483] transition-colors"
         >
           Giới thiệu
-        </a>
+        </Link>
 
-        {/* Dịch vụ dropdown – giữ menu mở khi hover cả button lẫn box */}
+        {/* Dịch vụ dropdown */}
         <div
           className="relative"
           onMouseEnter={() => setShowDesktopServices(true)}
@@ -61,25 +64,28 @@ const Menu = () => {
                            border border-gray-200 text-gray-700"
               >
                 {services.map((service) => (
-                  <a
+                  <Link
                     key={service.id}
                     href="#dich-vu"
                     className="block px-4 py-2 hover:bg-gray-100 hover:text-[#3D6350]"
                   >
                     {service.title}
-                  </a>
+                  </Link>
                 ))}
               </motion.div>
             )}
           </AnimatePresence>
         </div>
 
-        <a href="#blog" className="hover:text-[#D1B483] transition-colors">
+        <Link href="#blog" className="hover:text-[#D1B483] transition-colors">
           Blog
-        </a>
-        <a href="#lien-he" className="hover:text-[#D1B483] transition-colors">
+        </Link>
+        <Link
+          href="#lien-he"
+          className="hover:text-[#D1B483] transition-colors"
+        >
           Liên hệ
-        </a>
+        </Link>
       </nav>
 
       {/* ----- Nút mở menu Drawer cho mobile (< xl) ----- */}
@@ -122,20 +128,20 @@ const Menu = () => {
               </div>
 
               <nav className="flex-1 overflow-y-auto p-6 space-y-6 text-lg font-semibold">
-                <a
-                  href="#trang-chu"
+                <Link
+                  href="/"
                   className="block hover:text-yellow-300 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   Trang chủ
-                </a>
-                <a
-                  href="#gioi-thieu"
+                </Link>
+                <Link
+                  href="/introduce"
                   className="block hover:text-yellow-300 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   Giới thiệu
-                </a>
+                </Link>
 
                 {/* Dịch vụ có dropdown trong Drawer */}
                 <div>
@@ -161,34 +167,34 @@ const Menu = () => {
                         className="mt-2 ml-4 space-y-2 overflow-hidden"
                       >
                         {services.map((service) => (
-                          <a
+                          <Link
                             key={service.id}
                             href="#dich-vu"
                             className="block text-white/90 hover:text-yellow-300 transition-colors"
                             onClick={() => setOpen(false)}
                           >
                             {service.title}
-                          </a>
+                          </Link>
                         ))}
                       </motion.div>
                     )}
                   </AnimatePresence>
                 </div>
 
-                <a
+                <Link
                   href="#blog"
                   className="block hover:text-yellow-300 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   Blog
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#lien-he"
                   className="block hover:text-yellow-300 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   Liên hệ
-                </a>
+                </Link>
               </nav>
             </motion.aside>
           </>
