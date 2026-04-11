@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://phuclongwedding.com"),
   title: "Phúc Long Wedding",
   description:
-    "Phúc Long Wedding cung cấp dịch vụ cưới trọn gói, trang trí tiệc cưới đẹp mắt và độc đáo, biến ngày trọng đại của bạn thành kỷ niệm đáng nhớ.",
+    "Phúc Long Wedding cung cấp dịch vụ cưới trọn gói, trang trí tiệc cưới đẹp mắt và độc đáo, biến ngày trọng đại của bạn thành kỷ niệm đáng nhớ. Phúc Long Wedding, dịch vụ tổ chức đám cưới số một tại Hạ Long, Quảng Ninh",
   robots: {
     index: true,
     follow: true,
@@ -31,6 +31,10 @@ export const metadata: Metadata = {
     "dịch vụ cưới",
     "trang trí tiệc cưới",
     "tổ chức đám cưới",
+    "hạ long",
+    "quảng ninh",
+    "đám cưới hạ long",
+    "đám cưới quảng ninh",
   ],
   authors: [{ name: "Phúc Long Wedding" }],
   icons: {

@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 export const services = [
   {
     id: 1,
-    images: "/images/home/service1.png",
+    images: "/images/home/service1.jpg",
     title: "Trang trí tiệc cưới",
     desc: "Thiết kế không gian tiệc cưới sang trọng, từ bàn tiệc, sân khấu đến cổng hoa.",
   },
