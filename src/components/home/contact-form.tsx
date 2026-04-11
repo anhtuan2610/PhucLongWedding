@@ -52,7 +52,7 @@ const ContactForm = () => {
         setIsSuccess(false);
         setMessage("Chưa gửi được: " + (data.message || "Lỗi không xác định"));
       }
-    } catch (error: any) {
+    } catch {
       setIsSuccess(false);
       setMessage("Có lỗi mạng xảy ra: Vui lòng thử lại sau");
     } finally {
