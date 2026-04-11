@@ -35,10 +35,11 @@ const ContactForm = () => {
         },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: `[Web] Liên hệ mới từ ${name} - Phúc Long Wedding`,
-          name: name,
-          phone: phone,
-          "Dịch vụ quan tâm": serviceNames[service] || service,
+          from_name: "Thông Báo Khách Hàng (Web Phúc Long)",
+          subject: `🎉 [Web Phúc Long] Có khách mới cần tư vấn: ${name}`,
+          "🧑‍💼 Họ và Tên": name,
+          "📞 Số điện thoại": phone,
+          "💖 Dịch vụ quan tâm": serviceNames[service] || service,
         }),
       });
 
